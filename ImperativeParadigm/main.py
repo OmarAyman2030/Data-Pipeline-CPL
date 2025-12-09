@@ -72,10 +72,7 @@ def main():
     summary_out = os.path.join(OUTPUT_DIR, "analysis_summary.txt")
     save_analysis_summary(stats, summary_out)
     print(f"Saved analysis summary to {summary_out}")
-
-        # ---------------------------------------------------
-    #                 VISUALIZATIONS
-    # ---------------------------------------------------
+    
 
     # Line chart: Sales over time
     dates = extract_column(rows, "Date")

@@ -60,11 +60,7 @@ def main():
                 f.write(f"  {k}: {v}\n")
             f.write("\n")
     print(f"Saved analysis summary to {summary_out}")
-
-
-       # ---------------------------------------------------
-    #                VISUALIZATIONS
-    # ---------------------------------------------------
+    
 
     # 1. Line Chart: Sales Over Time
     dates = extract_column(rows, "Date")

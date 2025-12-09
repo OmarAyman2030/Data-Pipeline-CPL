@@ -33,7 +33,7 @@ def load_json(path):
 # [Concept: Tail Recursion & Accumulators]
 # [Concept: Pattern Matching Simulation (Head | Tail)]
 
-def recursive_map(func, lst, acc=None):
+def recursive_map(func, lst, acc=None): #(Tail Recursive Map)
     """
     تطبيق دالة على قائمة باستخدام العودية الذيلية والمراكم.
     تطابق مفهوم: Map F L -> L'
@@ -74,7 +74,7 @@ def recursive_filter(condition_fn, lst, acc=None):
 # -------- Cleaning --------
 
 def handle_missing(rows, fill_values=None):
-    # [Concept: Contextual Environment / Closure]
+    # [Concept: Contextual Environment / Closure, CE/Clousure]
     # المتغير fill_values موجود في البيئة الخارجية ويتم استدعاؤه داخل fill_row
     fill_values = fill_values or {}
 
@@ -155,7 +155,7 @@ def aggregate_sum_by_key(rows, key_field, sum_field):
     raw_sums = aggregate_recursive(rows, {})
 
     # 2. Format Output (Transformation)
-    # تحويل القاموس الناتج إلى قائمة قواميس
+    
     def format_output(item):
         k, v = item
         return {"key": k, sum_field: round(v, 2)}
@@ -183,8 +183,7 @@ def numeric_column_list(rows, column):
 
 def analyze_statistics(rows, numeric_columns):
     # [Concept: Higher-Order Function & Recursion]
-    # بدلاً من حلقة for على الأعمدة، نستخدم العودية لبناء قاموس النتائج
-
+    
     def analyze_cols_recursive(cols, acc):
         if not cols:
             return acc

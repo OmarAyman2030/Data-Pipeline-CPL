@@ -8,7 +8,7 @@ from utils import safe_float
 # -------------------------
 
 def extract_column(rows, column):
-    """Extract a column using loops (imperative style)."""
+   
     out = []
     for r in rows:
         out.append(r.get(column))
@@ -31,9 +31,7 @@ def extract_two_numeric_columns(rows, col1, col2):
     return xs, ys
 
 
-# -------------------------
-#  Visualization (IO)
-# -------------------------
+
 
 def plot_line(dates, values, save_path):
     plt.figure(figsize=(10, 5))

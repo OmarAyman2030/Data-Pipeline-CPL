@@ -46,10 +46,6 @@ def safe_float(value, default=0.0):
 
 
 def stats_summary(values):
-    """
-    حساب الإحصائيات.
-    تم استبدال List Comprehension بأسلوب عودي لتنظيف البيانات.
-    """
 
     # دالة عودية لتصفية القيم None (بديل لـ List Comprehension)
     def recursive_clean(lst, acc=None):
@@ -83,9 +79,7 @@ def stats_summary(values):
     }
 
 
-# ==========================================
-# I/O Operations (Impure but Recursive Control Flow)
-# ==========================================
+
 
 def write_csv(path, fieldnames, rows):
     """
