@@ -1,0 +1,15 @@
+Column: Sales
+  count: 78
+  mean: 1945.4192307692308
+  median: 1800.0
+  variance: 494041.98789940827
+  min: 1050.0
+  max: 3500.0
+
+Column: SalesGrowth
+  count: 78
+  mean: 0.30688461538461537
+  median: 0.1637
+  variance: 0.1766068079684418
+  min: -0.0833
+  max: 1.4444
